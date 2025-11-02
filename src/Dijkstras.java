@@ -26,6 +26,8 @@ public static void main(String []args){
         //find the smallest weight in the distance array
         int m = smallest(d,v);
         for(int j = 0 ;j<n;j++){
+
+            //condition to update the array.
             if(v[m]!=1&&C[m][j]!=0&&d[m]+C[m][j]<d[j]){
                 d[j] = d[m]+C[m][j];
             }
