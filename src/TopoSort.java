@@ -9,10 +9,11 @@ public class TopoSort {
         int [][]graph = new int [n][n];
         int []result = new int[n];
         Arrays.fill(indeg,0);
-        System.out.println("Enter the adjacency matrix representing te graph:");
+        System.out.println("Enter the adjacency matrix representing the graph:");
         for(int i =0;i<n;i++){
             for(int j =0;j<n;j++){
                 graph[i][j] = sc.nextInt();
+                //creating the in-degree matrix
                 if(graph[i][j]!=0){
                     indeg[j]++;
                 }
