@@ -33,7 +33,7 @@ public class Prims
   static int minkey(int[]key,boolean[] visited){
       int minindex =-1,min =Integer.MAX_VALUE;
       for(int i =0;i<key.length;i++){
-          if(!visited[i]&&key[i]<min){
+           if(!visited[i]&&key[i]<min){
               min=key[i];
               minindex=i;
           }
