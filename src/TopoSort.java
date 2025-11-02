@@ -40,7 +40,7 @@ public class TopoSort {
                indeg[i]--;//set to -1 hence deleted
            }
         }
-        System.out.print("Topo Sort order: ");
+        System.out.print("Topological Sort order: ");
         int i;
         for(i = 0;i<n-1;i++){
             System.out.print(result[i]+"-->");
